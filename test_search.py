@@ -11,7 +11,7 @@ url = 'http://automationpractice.com'
 
 
 # @unittest.skip
-class TestLogin(unittest.TestCase):
+class TestSearch(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.delete_all_cookies()

@@ -6,14 +6,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-# url as an environment variable use the below + check if import is not commented
+# url as an environment variable use the below line + check if import os is not commented
 # url = os.environ['url']
 url = 'http://automationpractice.com'
 random_number = random.randrange(1, 9999999999)
 random_email = 'musowicz+' + str(random_number) + '@squiz.pl'
 
 
-@unittest.skip
+# @unittest.skip
 class TestRegistration(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
